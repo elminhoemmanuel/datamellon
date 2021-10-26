@@ -27,3 +27,19 @@ html, body{
   }
   @keyframes s3 {to{transform: rotate(1turn)}}
 
+.height{
+    height:24rem;
+}
+
+.pie{
+    height:24rem;
+}
+
+@media screen and (max-width: 767px){
+    .height{
+        height:18rem;
+    }
+    .pie{
+        height:auto;
+    }
+  }

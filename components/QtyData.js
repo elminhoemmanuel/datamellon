@@ -44,7 +44,7 @@ const QtyData = () => {
                 <div>
                     <h1 className='font-bold text-sm md:text-2xl mb-6 text-center'>Bar Chart showing SkyHigh Quantity data for the past 4 years </h1>
                 </div>
-                <div className="h-72 md:h-96">
+                <div className="h-72 md:h-96 height">
                     <Chart
                         options={barData.options}
                         series={barData.series}
@@ -59,7 +59,7 @@ const QtyData = () => {
                 <div>
                     <h1 className='font-bold text-sm md:text-2xl mb-6 text-center'>Pie chart showing SkyHigh Quantity data for the past 4 years </h1>
                 </div>
-                <div className="h-auto md:h-96">
+                <div className="h-auto md:h-96 pie">
                     <Chart
                         options={pieData.options}
                         series={pieData.series}
@@ -74,7 +74,7 @@ const QtyData = () => {
                 <div>
                     <h1 className='font-bold text-sm md:text-2xl mb-6 text-center'>Time series showing SkyHigh Quantity data for the past 4 years </h1>
                 </div>
-                <div className="h-72 md:h-96">
+                <div className="h-72 md:h-96 height">
                     <Chart
                         options={barData.options}
                         series={barData.series}

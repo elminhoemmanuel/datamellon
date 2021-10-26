@@ -54,7 +54,7 @@ const CompData = () => {
                 <div>
                     <h1 className='font-bold text-sm md:text-2xl mb-6 text-center'>Composite bar chart showing SkyHigh Sales, Profit and Quantity data for the past 4 years </h1>
                 </div>
-                <div className="h-72 md:h-96 flex items-center justify-center">
+                <div className="h-72 md:h-96 height flex items-center justify-center">
                     <Chart
                         options={compBarData.options}
                         series={compBarData.series}
@@ -71,7 +71,7 @@ const CompData = () => {
                 <div>
                     <h1 className='font-bold text-sm md:text-2xl mb-6 text-center'>Composite Time series showing SkyHigh Sales, Profit and Quantity data for the past 4 years </h1>
                 </div>
-                <div className="h-72 md:h-96">
+                <div className="h-72 md:h-96 height">
                     <Chart
                         options={compBarData.options}
                         series={compBarData.series}
