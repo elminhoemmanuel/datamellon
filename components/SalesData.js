@@ -41,11 +41,11 @@ const SalesData = () => {
 
     return (
         <div>
-            <div className='py-4 '>
+            <div className='py-6 '>
                 <div>
-                    <h1 className='font-bold text-2xl mb-6 text-center'>Bar Chart showing SkyHigh Sales data for the past 4 years </h1>
+                    <h1 className='font-bold text-sm md:text-2xl mb-6 text-center'>Bar Chart showing SkyHigh Sales data for the past 4 years </h1>
                 </div>
-                <div className="h-96">
+                <div className="h-72 md:h-96">
                     <Chart
                         options={barData.options}
                         series={barData.series}
@@ -56,11 +56,11 @@ const SalesData = () => {
                 </div>
             </div>
 
-            <div className='py-4 '>
+            <div className='py-6 '>
                 <div>
-                    <h1 className='font-bold text-2xl mb-6 text-center'>Pie chart showing SkyHigh Sales data for the past 4 years </h1>
+                    <h1 className='font-bold text-sm md:text-2xl mb-6 text-center'>Pie chart showing SkyHigh Sales data for the past 4 years </h1>
                 </div>
-                <div className="h-96">
+                <div className="h-auto md:h-96">
                     <Chart
                         options={pieData.options}
                         series={pieData.series}
@@ -71,11 +71,11 @@ const SalesData = () => {
                 </div>
             </div>
 
-            {/* <div className='py-4 '>
+            {/* <div className='py-6 '>
                                             <div>
                                                 <h1 className='font-bold text-sm mb-6 text-center'>Composite bar chart showing SkyHigh Sales, Profit and Quantity data for the past 4 years </h1>
                                             </div>
-                                            <div className="h-96 flex items-center justify-center">
+                                            <div className="h-72 md:h-96 flex items-center justify-center">
                                                 <Chart
                                                     options={compBarData.options}
                                                     series={compBarData.series}
@@ -86,11 +86,11 @@ const SalesData = () => {
                                             </div>
                                         </div> */}
 
-            <div className='py-4 '>
+            <div className='py-6 '>
                 <div>
-                    <h1 className='font-bold text-2xl mb-6 text-center'>Time series showing SkyHigh Sales data for the past 4 years </h1>
+                    <h1 className='font-bold text-sm md:text-2xl mb-6 text-center'>Time series showing SkyHigh Sales data for the past 4 years </h1>
                 </div>
-                <div className="h-96">
+                <div className="h-72 md:h-96">
                     <Chart
                         options={barData.options}
                         series={barData.series}
@@ -101,11 +101,11 @@ const SalesData = () => {
                 </div>
             </div>
 
-            {/* <div className='py-4 '>
+            {/* <div className='py-6 '>
                                             <div>
-                                                <h1 className='font-bold text-2xl mb-6 text-center'>Composite Time series showing SkyHigh Sales, Profit and Quantity data for the past 4 years </h1>
+                                                <h1 className='font-bold text-sm md:text-2xl mb-6 text-center'>Composite Time series showing SkyHigh Sales, Profit and Quantity data for the past 4 years </h1>
                                             </div>
-                                            <div className="h-96">
+                                            <div className="h-72 md:h-96">
                                                 <Chart
                                                     options={compBarData.options}
                                                     series={compBarData.series}
@@ -116,9 +116,9 @@ const SalesData = () => {
                                             </div>
                                         </div> */}
 
-            <div className='py-4 '>
+            <div className='py-6 '>
                 <div>
-                    <h1 className='font-bold text-2xl mb-4 text-center'>Table showing SkyHigh Sales data for the past 4 years( trauncated to first 30 values) </h1>
+                    <h1 className='font-bold text-sm md:text-2xl mb-4 text-center'>Table showing SkyHigh Sales data for the past 4 years( trauncated to first 30 values) </h1>
                 </div>
                 <div className='mb-3 '>
                     <div>

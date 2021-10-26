@@ -9,6 +9,7 @@ const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 import SalesData from "../components/SalesData"
 import ProfitsData from "../components/ProfitsData"
 import QtyData from "../components/QtyData"
+import CompData from "../components/CompData"
 
 
 export default function Home() {
@@ -19,43 +20,6 @@ export default function Home() {
     const { data, error, sales14, sales15, sales16, sales17,
         profit14, profit15, profit16, profit17, qty14, qty15, qty16, qty17,
     } = useSelector((state) => state.home);
-
-    const compBarData = {
-        options: {
-            chart: {
-                id: "bar-chart",
-                type: 'bar',
-                stacked: true,
-                plotOptions: {
-                    bar: {
-                        horizontal: false,
-                    },
-                },
-            },
-            xaxis: {
-                categories: [2014, 2015, 2016, 2017,]
-            },
-            colors: ['#72B046', "#67fb04", '#142c04', '#67fb04'],
-            stroke: {
-                curve: 'smooth',
-                width: 2
-            }
-        },
-        series: [
-            {
-                name: "Sales",
-                data: [sales14, sales15, sales16, sales17,]
-            },
-            {
-                name: "Profit",
-                data: [profit14, profit15, profit16, profit17,]
-            },
-            {
-                name: "Quantity",
-                data: [qty14, qty15, qty16, qty17,]
-            },
-        ]
-    };
 
     let sortedData1 = [...data];
 
@@ -105,6 +69,7 @@ export default function Home() {
                                                         <option value="sales">Sales</option>
                                                         <option value="profits">Profits</option>
                                                         <option value="qty">Quantity</option>
+                                                        <option value="comp">Composite Charts</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -113,6 +78,7 @@ export default function Home() {
                                         { filter === "sales" && <SalesData  />}
                                         { filter === "profits" && <ProfitsData  />}
                                         { filter === "qty" && <QtyData  />}
+                                        { filter === "comp" && <CompData  />}
 
                                     </div>
                                 }
