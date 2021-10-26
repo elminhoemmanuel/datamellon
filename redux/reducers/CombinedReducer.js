@@ -6,7 +6,7 @@ import storage from 'redux-persist/lib/storage'
 
 
 const persistConfig = {
-  key: 'root',
+  key: 'home',
   storage,
   whitelist:[]
 }

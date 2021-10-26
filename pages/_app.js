@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <React.Fragment>
       <Head>
-        <title>SFS Capital</title>
+        <title>SkyHigh</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"

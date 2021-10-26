@@ -9,19 +9,8 @@ module.exports = {
         'hero-bg': "url('/images/farmhero.jpg')",
        }),
       colors: {
-        sfsblue:"#152144",
-        sfsyellow:"#FFD873",
-        sfstext:"#002058",
-        inputtext:"#B2B7BC",
-        inputbg:"#F5F5F5",
-        sfsgreen:"#10C06D",
-        featurestext:"#B3B3B3",
-        footeryellow:"#F9A825",
-        dashtext:"#7E8598",
-        dashbg:"#E5E5E5",
-        navborder:"#B2B7BC",
-        sfsorange:"#F2994A",
-        cardblue:"#0B638D",
+        green:"#72B046",
+        
       }
     },
 
